@@ -166,14 +166,99 @@ body {
 }
 
 /* Latest Deals Sections Styles */
-.latest-deal-contents{
-    text-align: center;
-    margin-bottom: 120px;
+.latest-deal-contents {
+  text-align: center;
+  margin-bottom: 120px;
 }
 
-.latest-deal-title{
-    font-weight: bold;
-    font-size: 3.125rem;
+.latest-deal-title {
+  font-weight: bold;
+  font-size: 3.125rem;
+}
+
+.latest-deal-img {
+  display: grid;
+  gap: 1.563rem;
+  grid-template-columns: 1fr 2fr;
+  min-height: 26.4rem;
+  margin-bottom: 120px;
+}
+
+.bloom {
+  background-image: url("../assets/deal-bloom.png");
+  width: 47rem;
+  height: 26.4rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 22px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  margin-bottom: 1.5rem;
+}
+
+.ana {
+  background-image: url("../assets/deal-ana.png");
+  width: 47rem;
+  height: 26.4rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 22px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+}
+
+.zabo {
+  background-image: url("../assets/deal-zabo.png");
+  width: 47rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 22px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-row: span 2;
+  height: 100%;
+  min-height: 26.4rem;
+}
+
+.vertical-collage {
+  min-height: 26.4rem;
+}
+
+.vertical-collage p {
+  font-size: 1.25rem;
+  color: white;
+  font-weight: bold;
+}
+
+.vertical-collage a {
+  color: white;
+  font-weight: 500;
+}
+
+.zabo p {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.zabo a {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: white;
+}
+
+.bloom-texts,
+.ana-texts,
+.zabo-texts {
+  text-align: center;
 }
 
 /* Responsive Styles */
@@ -194,11 +279,19 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .plants-lover-container{
+  .plants-lover-container {
     flex-direction: column;
   }
 
-  .trust-badge{
+  .trust-badge {
     display: none;
+  }
+
+  .latest-deal-img {
+    grid-template-columns: 1fr;
+  }
+  .zabo {
+    margin-top: 1.5rem;
+    height: 50%;
   }
 }
