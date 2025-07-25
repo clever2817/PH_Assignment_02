@@ -165,6 +165,17 @@ body {
   margin-bottom: 22px;
 }
 
+/* Latest Deals Sections Styles */
+.latest-deal-contents{
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+.latest-deal-title{
+    font-weight: bold;
+    font-size: 3.125rem;
+}
+
 /* Responsive Styles */
 @media screen and (max-width: 576px) {
   body {
