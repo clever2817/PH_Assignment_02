@@ -1,32 +1,53 @@
 /* Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
 
-
 /* Shared Styles */
 
 .inter-font {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-  }
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
 
-  .noto-serif-font {
-    font-family: "Noto Serif", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-  }
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
 
-  h1{
-    margin: 0;
-  }
+h1,
+h2 {
+  margin: 0;
+}
 
 body {
   padding: 0;
   box-sizing: border-box;
   max-width: 1140px;
   margin: 0 auto;
+}
+
+.color-primary {
+  color: #e95a08;
+}
+
+.text-primary {
+  font-family: "Inter", sans-serif;
+  font-size: 1.375rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.btn-primary {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: white;
+  background-color: #e95a08;
+  padding: 0.625rem 3rem;
+  width: 100%;
+  border: none;
+  cursor: pointer;
 }
 
 /* Header Section Styles */
@@ -36,7 +57,7 @@ body {
 }
 
 .nav-menu li a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .nav-container {
@@ -51,42 +72,85 @@ body {
   gap: 3rem;
 }
 
-.cart{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.6rem;
+.cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
 }
 
 /* Banner Section Styles */
-.banner-container{
-    margin-top: 7.5rem;
-    margin-bottom: 7.5rem;
-    display: flex;
-    align-items: flex-end;
+.banner-container {
+  margin-top: 7.5rem;
+  margin-bottom: 7.5rem;
+  display: flex;
+  align-items: flex-end;
 }
 
-.banner-title{
-    font-weight: bold;
-    font-size: 4rem;
+.banner-title {
+  font-weight: bold;
+  font-size: 4rem;
 }
 
-.banner-description{
-    font-size: 1.375rem;
-    color: rgba(0, 0, 0, 0.5);
+.banner-description {
+  font-size: 1.375rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* Plant Section Styles */
+.plant-container {
+  text-align: center;
+  margin-bottom: 13.125rem;
+}
+
+.plant-card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 20px;
+}
+
+.plant-card {
+  width: 16.875rem;
+  height: 30rem;
+}
+
+.plant-title {
+  font-size: 3.125rem;
+  font-weight: bold;
+}
+
+.plant-name {
+  font-weight: 500;
+  font-size: 1.375rem;
+  color: #111111;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.plant-price {
+  font-weight: bold;
+  font-size: 1.375rem;
+  color: #111111;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /* Responsive Styles */
 @media screen and (max-width: 576px) {
-    body{
-        margin: 0 1rem;
-    }
+  body {
+    margin: 0 1rem;
+  }
 
-    .menu{
-        display: none;
-    }
+  .menu {
+    display: none;
+  }
 
-    .banner-container{
-        flex-direction: column-reverse;
-    }
+  .banner-container {
+    flex-direction: column-reverse;
+  }
+
+  .plant-card-container{
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
