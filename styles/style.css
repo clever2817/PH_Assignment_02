@@ -50,6 +50,11 @@ body {
   cursor: pointer;
 }
 
+.footer-text{
+  font-family: "Inter", sans-serif;
+  color: #6B7280;
+}
+
 /* Header Section Styles */
 
 .nav-menu li {
@@ -295,6 +300,38 @@ body {
   padding: 0.5rem 1.25rem;
 }
 
+/* Footer Section Styles */
+
+.footer-container{
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
+  display: flex;
+  gap: 6rem;
+}
+
+.footer-description{
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.375rem;
+}
+
+.footer-links1,
+.footer-links2{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer-links1 a,
+.footer-links2 a{
+  text-decoration: none;
+}
+
+.footer-social-links{
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
 /* Responsive Styles */
 @media screen and (max-width: 576px) {
   body {
@@ -313,7 +350,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .plants-lover-container {
+  .plants-lover-container{
     flex-direction: column;
   }
 
@@ -337,5 +374,9 @@ body {
     width: 25rem;
     justify-items: center;
   }
-  
+
+  .footer-container{
+    flex-direction: column;
+    gap: 2.8rem;
+  }
 }
