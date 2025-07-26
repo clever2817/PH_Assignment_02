@@ -261,6 +261,40 @@ body {
   text-align: center;
 }
 
+/* Join Section Styles */
+.join-container {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  height: 33rem;
+  background-image: url("../assets/news-letter-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.join-title {
+  font-size: 3.125rem;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.join-input-btn {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.join-input-btn [type="email"] {
+  height: 2rem;
+  max-width: 40.25rem;
+  color: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem 1.25rem;
+}
+
 /* Responsive Styles */
 @media screen and (max-width: 576px) {
   body {
@@ -294,4 +328,14 @@ body {
     margin-top: 1.5rem;
     height: 50%;
   }
+
+  .join-title {
+    font-size: 1.25rem;
+  }
+
+  .join-input-btn {
+    width: 25rem;
+    justify-items: center;
+  }
+  
 }
